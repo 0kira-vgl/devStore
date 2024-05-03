@@ -15,9 +15,9 @@ async function getProduct(slug: string): Promise<Product> {
       revalidate: 60 * 60, // 1 hour
     },
   });
-  const products = await response.json();
+  const product = await response.json();
 
-  return products;
+  return product;
 }
 
 export async function generateMetadata({
