@@ -32,6 +32,7 @@ export function SearchForm() {
       <Search className="size-5 text-zinc-500" />
 
       <input
+        type="search"
         name="q"
         required
         defaultValue={query ?? ""}
